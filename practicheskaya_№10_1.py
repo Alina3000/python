@@ -3,7 +3,7 @@ while True:
     try:
 
         a = list(map(int,input("Заполните матрицу, через пробел : ").split()))
-        n = int(input())
+        n = int(input("Введите размер массива : "))
         matrix = []
         index = 0
 
@@ -13,7 +13,7 @@ while True:
                 row.append(a[index])
                 index += 1
             matrix.append(row)
-
+        
         for row in matrix:
             print(row)
 
